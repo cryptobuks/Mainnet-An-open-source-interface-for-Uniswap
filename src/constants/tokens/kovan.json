@@ -1,0 +1,51 @@
+{
+    "name":"Kovan",
+    "timestamp": "2020-12-04T12:00:21.269Z",
+	"version": {
+		"major": 16,
+		"minor": 8,
+		"patch": 1
+	},
+	"tags": {},
+    "tokens":[
+    {
+        "address": "0xAaF64BFCC32d0F15873a02163e7E500671a4ffcD",
+        "symbol": "MKR",
+        "name": "Maker",
+        "decimals": 18,
+        "chainId": 42,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xAaF64BFCC32d0F15873a02163e7E500671a4ffcD/logo.png",
+        "coingeckoId": null,
+        "listedIn": [
+            "uniswap",
+            "sushiswap"
+        ]
+    },
+    {
+        "address": "0x4F96Fe3b7A6Cf9725f59d353F723c1bDb64CA6Aa",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18,
+        "chainId": 42,
+        "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_DAI.svg",
+        "coingeckoId": null,
+        "listedIn": [
+            "uniswap",
+            "sushiswap"
+        ]
+    },
+    {
+        "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+        "symbol": "UNI",
+        "name": "Uniswap",
+        "decimals": 18,
+        "chainId": 42,
+        "logoURI": "ipfs://QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg",
+        "coingeckoId": null,
+        "listedIn": [
+            "uniswap",
+            "sushiswap"
+        ]
+    }
+]
+}

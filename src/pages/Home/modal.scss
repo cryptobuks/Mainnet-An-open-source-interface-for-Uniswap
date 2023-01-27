@@ -1,0 +1,97 @@
+.modal {
+    font-size: 14px;
+    width: 600px;
+    padding: 15px 30px;
+    max-width: 90vw;
+    background-image: linear-gradient(to right, #FD1C68, #5D31FF);
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-weight: 400;
+}
+
+.modal>.header {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    font-size: 28px;
+    text-align: left;
+    padding: 5px 0;
+    font-weight: bold;
+
+}
+
+.modal>.content {
+    width: 100%;
+    padding: 30px 5px;
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    input {
+        border: none;
+        border-radius: 100px;
+        padding: 15px 10px;
+        width: 100%;
+        outline: none;
+        padding-right: 60px;
+    }
+
+    button {
+        cursor: pointer;
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #000;
+
+        svg path {
+            stroke-width: 1px;
+            stroke: #000;
+        }
+
+        &:hover {}
+    }
+}
+
+.modal>.actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.modal>.close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: -10px;
+    top: -10px;
+    font-size: 26px;
+    width: 34px;
+    height: 34px;
+    background: #ffffff;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.popup-overlay {
+    background-color: rgba(0, 0, 0, .75);
+    backdrop-filter: blur(3px);
+}

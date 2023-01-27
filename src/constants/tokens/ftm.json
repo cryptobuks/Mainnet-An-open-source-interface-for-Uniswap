@@ -1,0 +1,60 @@
+{
+    "name":"Fantom",
+    "timestamp": "2020-12-04T12:00:21.269Z",
+	"version": {
+		"major": 16,
+		"minor": 8,
+		"patch": 1
+	},
+	"tags": {},
+    "tokens": [
+        {
+            "chainId": 250,
+            "address": "0x049d68029688eabf473097a2fc38ef61633a3c7a",
+            "decimals": 6,
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "logoURI": "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xde3A24028580884448a5397872046a019649b084/logo.png"
+        },
+        {
+            "chainId": 250,
+            "address": "0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e",
+            "decimals": 18,
+            "name": "Dai Stablecoin",
+            "symbol": "DAI",
+            "logoURI": "https://raw.githubusercontent.com/Crocoswap/assets/master/blockchains/operachain/assets/0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e/logo.png"
+        },
+        {
+            "chainId": 250,
+            "address": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+            "decimals": 18,
+            "name": "USD Coin",
+            "symbol": "USDC",
+            "logoURI": "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0x095370AE41FF23798d96c1ADF7D58Ae6a2b05b18/logo.png"
+        },
+        {
+            "chainId": 250,
+            "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+            "decimals": 18,
+            "name": "Wrapped Ethereum",
+            "symbol": "WETH",
+            "logoURI": "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xf20d962a6c8f70c731bd838a3a388D7d48fA6e15/logo.png"
+        },
+        {
+            "chainId": 250,
+            "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+            "decimals": 8,
+            "name": "Wrapped Bitcoin",
+            "symbol": "WBTC",
+            "logoURI": "https://raw.githubusercontent.com/Crocoswap/assets/master/blockchains/operachain/assets/0x321162Cd933E2Be498Cd2267a90534A804051b11/logo.png"
+        },
+        {
+            "chainId": 250,
+            "address": "0xb3654dc3d10ea7645f8319668e8f54d2574fbdc8",
+            "decimals": 18,
+            "name": "ChainLink",
+            "symbol": "LINK",
+            "logoURI": "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xB3fe5374F67D7a22886A0eE082b2E2f9d2651651/logo.png"
+        }
+    ]
+}

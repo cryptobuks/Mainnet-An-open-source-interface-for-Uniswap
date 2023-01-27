@@ -1,0 +1,210 @@
+{
+    "name":"Etherium",
+    "timestamp": "2020-12-04T12:00:21.269Z",
+	"version": {
+		"major": 16,
+		"minor": 8,
+		"patch": 1
+	},
+	"tags": {},
+    "tokens": [
+        {
+            "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "chainId": 1,
+            "logoURI": "https://elk.finance/tokens/logos/ethereum/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
+            "coingeckoId": "tether",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "uniswap",
+                "sushiswap",
+                "openocean",
+                "optimism",
+                "arbitrum_bridge",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },
+        {
+            "address": "0x71fc860F7D3A592A4a98740e39dB31d25db65ae8",
+            "symbol": "aUSDT",
+            "name": "Aave Interest bearing USDT",
+            "decimals": 6,
+            "chainId": 1,
+            "logoURI": "https://static.debank.com/image/token/logo_url/0x71fc860f7d3a592a4a98740e39db31d25db65ae8/57564da75601d8986fa807bb815f78c2.png",
+            "coingeckoId": "aave-usdt-v1",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "openocean",
+                "lifinance"
+            ]
+        },
+        {
+            "address": "0x1CDD2EaB61112697626F7b4bB0e23Da4FeBF7B7C",
+            "symbol": "USDT",
+            "name": "USDT (Wormhole)",
+            "decimals": 6,
+            "chainId": 1,
+            "logoURI": "https://static.debank.com/image/eth_token/logo_url/0x1cdd2eab61112697626f7b4bb0e23da4febf7b7c/8d38b2fe4d7cf49ebcc94effcba9fc75.png",
+            "coingeckoId": "tether-usd-wormhole",
+            "listedIn": [
+                "coingecko",
+                "lifinance"
+            ]
+        },{
+            "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "decimals": 6,
+            "chainId": 1,
+            "logoURI": "https://elk.finance/tokens/logos/ethereum/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
+            "coingeckoId": "usd-coin",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "uniswap",
+                "sushiswap",
+                "openocean",
+                "optimism",
+                "arbitrum_bridge",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },{
+            "address": "0x9bA00D6856a4eDF4665BcA2C2309936572473B7E",
+            "symbol": "aUSDC",
+            "name": "Aave Interest bearing USDC",
+            "decimals": 6,
+            "chainId": 1,
+            "logoURI": "https://static.debank.com/image/token/logo_url/0x9ba00d6856a4edf4665bca2c2309936572473b7e/6841848cb7d6b39981cb76953af0f98a.png",
+            "coingeckoId": "aave-usdc-v1",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "openocean",
+                "lifinance"
+            ]
+        },{
+            "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+            "symbol": "DAI",
+            "name": "Dai Stablecoin",
+            "decimals": 18,
+            "chainId": 1,
+            "logoURI": "https://elk.finance/tokens/logos/ethereum/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+            "coingeckoId": "dai",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "uniswap",
+                "sushiswap",
+                "openocean",
+                "optimism",
+                "arbitrum_bridge",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },{
+            "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "symbol": "WETH",
+            "name": "Wrapped ETH",
+            "decimals": 18,
+            "chainId": 1,
+            "logoURI": "https://elk.finance/tokens/logos/ethereum/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+            "coingeckoId": "weth",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "uniswap",
+                "sushiswap",
+                "openocean",
+                "arbitrum_bridge",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },
+        {
+            "address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+            "symbol": "MATIC",
+            "name": "MATIC",
+            "decimals": 18,
+            "chainId": 1,
+            "logoURI": "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png?1624446912",
+            "coingeckoId": "matic-network",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "uniswap",
+                "sushiswap",
+                "openocean",
+                "rubic",
+                "lifinance",
+                "xyfinance"
+            ]
+        },{
+            "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+            "symbol": "LINK",
+            "name": "Chainlink",
+            "decimals": 18,
+            "chainId": 1,
+            "logoURI": "https://elk.finance/tokens/logos/ethereum/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png",
+            "coingeckoId": "chainlink",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "uniswap",
+                "sushiswap",
+                "openocean",
+                "optimism",
+                "arbitrum_bridge",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },{
+            "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            "symbol": "WBTC",
+            "name": "WBTC",
+            "decimals": 8,
+            "chainId": 1,
+            "logoURI": "https://assets.coingecko.com/coins/images/7598/small/wrapped_bitcoin_wbtc.png?1548822744",
+            "coingeckoId": "wrapped-bitcoin",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "uniswap",
+                "sushiswap",
+                "openocean",
+                "optimism",
+                "arbitrum_bridge",
+                "rubic",
+                "lifinance",
+                "xyfinance"
+            ]
+        },{
+            "address": "0x418D75f65a02b3D53B2418FB8E1fe493759c7605",
+            "symbol": "WBNB",
+            "name": "Wrapped BNB (Wormhole)",
+            "decimals": 18,
+            "chainId": 1,
+            "logoURI": "https://static.debank.com/image/eth_token/logo_url/0x418d75f65a02b3d53b2418fb8e1fe493759c7605/1177dec1b9b7f58a799c3f22d93b04e1.png",
+            "coingeckoId": "binance-coin-wormhole",
+            "listedIn": [
+                "coingecko",
+                "lifinance"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+
+.accordion {
+    list-style: none;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+  
+  .accordion_item {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin-bottom:10px;
+    overflow:hidden;
+    color:#fff;
+    border:1px solid;
+    border-image: radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) 1;
+    padding:15px 0;
+    
+  }
+  
+  .button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    background-color:transparent;
+    text-align: left;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    cursor: pointer;
+    border:none;
+    color:#fff;
+
+  }
+  
+  .control {
+    font-size: 20px;
+  }
+  
+  .answer {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(90.54deg, #5D31FF -38.38%, #118DFF 53.01%, #1FD6FE 135.35%);
+    padding:5px 20px;
+    padding-bottom:30px;
+    font-size:16px;
+    line-height:22px;
+  }
+  
+  /* activate toggle */
+  .accordion_item.active .button {
+    color:#000
+  }
+  .accordion_item.active{
+    background: linear-gradient(90.54deg, #5D31FF -38.38%, #118DFF 53.01%, #1FD6FE 135.35%);
+    color:#000;
+    border-radius: 10px;
+  }
+  .answer_wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.2s;
+    padding-left:50px
+  }
+
+
+.accordion_q_holder{
+    display:flex;
+    align-items:center;
+    font-size:16px;
+    flex-wrap:nowrap;
+}
+
+.accordian__icon {
+    width: 30px;
+    height: 30px;
+    background-color: #9370db;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+
+}
+
+.accordion_item.active .accordian__icon {
+    background-color: #000;
+}
+.accordion_item.active .accordian__icon img{
+
+}
+
+@media (max-width: 620px) {
+  .answer {
+      font-size:14px;
+      padding:0;
+      text-align: left;
+  }  
+}

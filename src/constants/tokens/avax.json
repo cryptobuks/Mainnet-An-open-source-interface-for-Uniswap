@@ -1,0 +1,223 @@
+{
+    "name":"Avax",
+    "timestamp": "2020-12-04T12:00:21.269Z",
+	"version": {
+		"major": 16,
+		"minor": 8,
+		"patch": 1
+	},
+	"tags": {},
+    "tokens": [
+        {
+            "address": "0xc7198437980c041c805A1EDcbA50c1Ce5db95118",
+            "symbol": "USDT.e",
+            "name": "Tether USD",
+            "decimals": 6,
+            "chainId": 43114,
+            "logoURI": "https://elk.finance/tokens/logos/avax/0xc7198437980c041c805A1EDcbA50c1Ce5db95118/logo.png",
+            "coingeckoId": "tether-avalanche-bridged-usdt-e",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "joe",
+                "pangolin",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },
+        {
+            "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
+            "symbol": "DAI.e",
+            "name": "Dai Stablecoin",
+            "decimals": 18,
+            "chainId": 43114,
+            "logoURI": "https://elk.finance/tokens/logos/avax/0xd586E7F844cEa2F87f50152665BCbc2C279D8d70/logo.png",
+            "coingeckoId": "dai",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "joe",
+                "pangolin",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },
+        {
+            "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
+            "symbol": "aAvaDAI",
+            "name": "Aave Avalanche DAI",
+            "decimals": 18,
+            "chainId": 43114,
+            "logoURI": "https://api.rubic.exchange/assets/avalanche/0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee/logo.png",
+            "coingeckoId": "aave-dai",
+            "listedIn": [
+                "coingecko",
+                "openocean",
+                "rubic"
+            ]
+        },
+        {
+            "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+            "symbol": "USDC",
+            "name": "USDC",
+            "decimals": 6,
+            "chainId": 43114,
+            "logoURI": "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png?1547042389",
+            "coingeckoId": "usd-coin",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "openocean",
+                "joe",
+                "pangolin",
+                "rubic",
+                "lifinance",
+                "xyfinance"
+            ]
+        },
+        {
+            "address": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
+            "symbol": "USDC.e",
+            "name": "USD Coin",
+            "decimals": 6,
+            "chainId": 43114,
+            "logoURI": "https://elk.finance/tokens/logos/avax/0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664/logo.png",
+            "coingeckoId": "usd-coin-avalanche-bridged-usdc-e",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "joe",
+                "pangolin",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },{
+            "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+            "symbol": "USDT",
+            "name": "USDT",
+            "decimals": 6,
+            "chainId": 43114,
+            "logoURI": "https://assets.coingecko.com/coins/images/325/small/Tether-logo.png?1598003707",
+            "coingeckoId": "tether",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "openocean",
+                "joe",
+                "pangolin",
+                "rubic",
+                "lifinance",
+                "xyfinance"
+            ]
+        },{
+            "address": "0x8b82A291F83ca07Af22120ABa21632088fC92931",
+            "symbol": "WETH",
+            "name": "Wrapped Ether (Wormhole)",
+            "decimals": 18,
+            "chainId": 43114,
+            "logoURI": "https://static.debank.com/image/avax_token/logo_url/0x8b82a291f83ca07af22120aba21632088fc92931/50343a575390e309187db84f5ad13aee.png",
+            "coingeckoId": "ethereum-wormhole",
+            "listedIn": [
+                "coingecko",
+                "lifinance"
+            ]
+        },{
+            "address": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
+            "symbol": "WETH.e",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "chainId": 43114,
+            "logoURI": "https://elk.finance/tokens/logos/avax/0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB/logo.png",
+            "coingeckoId": "weth",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "joe",
+                "pangolin",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },{
+            "address": "0xf20d962a6c8f70c731bd838a3a388D7d48fA6e15",
+            "symbol": "ETH",
+            "name": "Ether",
+            "decimals": 18,
+            "chainId": 43114,
+            "logoURI": "https://static.debank.com/image/avax_token/logo_url/0xf20d962a6c8f70c731bd838a3a388d7d48fa6e15/80dd95753396b5619cf84b0df135eae5.png",
+            "coingeckoId": null,
+            "listedIn": [
+                "sushiswap",
+                "lifinance"
+            ]
+        },
+        {
+            "address": "0xF0FF231e3F1A50F83136717f287ADAB862f89431",
+            "symbol": "USDT",
+            "name": "USDT (Wormhole)",
+            "decimals": 6,
+            "chainId": 43114,
+            "logoURI": "https://static.debank.com/image/avax_token/logo_url/0xf0ff231e3f1a50f83136717f287adab862f89431/8d38b2fe4d7cf49ebcc94effcba9fc75.png",
+            "coingeckoId": "tether-usd-wormhole",
+            "listedIn": [
+                "coingecko",
+                "lifinance"
+            ]
+        },{
+            "address": "0x50b7545627a5162F82A992c33b87aDc75187B218",
+            "symbol": "WBTC.e",
+            "name": "Wrapped BTC",
+            "decimals": 8,
+            "chainId": 43114,
+            "logoURI": "https://elk.finance/tokens/logos/avax/0x50b7545627a5162F82A992c33b87aDc75187B218/logo.png",
+            "coingeckoId": "wrapped-bitcoin",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "joe",
+                "pangolin",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },{
+            "address": "0x5947BB275c521040051D82396192181b413227A3",
+            "symbol": "LINK.e",
+            "name": "ChainLink Token",
+            "decimals": 18,
+            "chainId": 43114,
+            "logoURI": "https://elk.finance/tokens/logos/avax/0x5947BB275c521040051D82396192181b413227A3/logo.png",
+            "coingeckoId": "chainlink",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "joe",
+                "pangolin",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        }
+    ]
+}

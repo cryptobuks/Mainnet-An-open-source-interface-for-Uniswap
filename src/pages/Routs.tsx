@@ -1,0 +1,152 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { useState } from 'react'
+import { Route, Switch, withRouter } from 'react-router-dom'
+import styled from 'styled-components'
+import GoogleAnalyticsReporter from '../components/analytics/GoogleAnalyticsReporter'
+import Header from '../components/Header'
+import Popups from '../components/Popups'
+import Web3ReactManager from '../components/Web3ReactManager'
+import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
+import LogoDark from '../assets/svg/logo-new.png'
+import AddLiquidity from './AddLiquidity'
+import {
+  RedirectDuplicateTokenIds,
+  RedirectOldAddLiquidityPathStructure,
+  RedirectToAddLiquidity
+} from './AddLiquidity/redirects'
+import MigrateV1 from './MigrateV1'
+import MigrateV1Exchange from './MigrateV1/MigrateV1Exchange'
+import RemoveV1Exchange from './MigrateV1/RemoveV1Exchange'
+import Pool from './Pool'
+import PoolFinder from './PoolFinder'
+import RemoveLiquidity from './RemoveLiquidity'
+import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
+import Swap from './Swap'
+// import Home from './Home/Home'
+import { RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
+
+import { ProSidebar, SidebarHeader, SidebarFooter, SidebarContent, Menu, MenuItem } from 'react-pro-sidebar'
+import { HomeIcon, PairIcon, MultichartIcon, MultiswapIcon, StatsIcon } from '../components/Icon/Icons'
+import { isMobile, isTablet } from 'react-device-detect'
+import './globals.css'
+import './test.css'
+import Sidebar from 'src/layouts/sidebar/_expandable';
+const AppWrapper = styled.div`
+  display: grid;
+  flex-flow: column;
+  align-items: flex-start;
+  overflow-x: hidden;
+  grid-template-columns: 110px 1fr;
+  grid-template-rows: 100px auto;
+`
+export const HeaderElement = styled.div`
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
+`
+export const Title = styled.a`
+  display: flex;
+  align-items: center;
+  pointer-events: auto;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  :hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1000px) {
+    justify-content: flex-start;
+    padding: 0 30px;
+    margin-right: 20px;
+    align-items: flex-start;
+  }
+`
+
+const HeaderWrapper = styled.div`
+  ${({ theme }) => theme.flexRowNoWrap}
+  width: 100%;
+  justify-content: space-between;
+  grid-column: 2/-1;
+  grid-row: 1/2;
+`
+const SidebarWrapper = styled.div`
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  height: 100vh;
+  position: static;
+  top: 0;
+`
+
+const BodyWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  align-items: center; 
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10;
+  
+
+  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+      padding: 16px;
+  `};
+
+  z-index: 1;
+`
+
+const Marginer = styled.div`
+  margin-top: 5rem;
+`
+const App = (props: { location: { hash: string; pathname: string } }) => {
+  //console.log(props.location.pathname)
+  const [open, setOpen] = useState(true)
+
+  return (
+    <>
+      <Route component={GoogleAnalyticsReporter} />
+      <Route component={DarkModeQueryParamReader} />
+      {/* <Route strict exact path="/" component={Home} /> */}
+      <Route strict exact path="/" component={RedirectPathToSwapOnly} />
+      <AppWrapper className='dark ' >
+        {props.location.pathname !== '/' && (<>
+          <HeaderWrapper>
+            <Header />
+          </HeaderWrapper>
+          {/* <SidebarWrapper className='wrapper'> */}
+
+          <Sidebar className="xl:block" />
+          {/* </SidebarWrapper> */}
+        </>)}
+        <BodyWrapper>
+          {props.location.pathname !== '/' && <Popups />}
+          <Web3ReactManager>
+            <Switch>
+              <Route exact strict path="/swap" component={Swap} />
+              <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
+              <Route exact strict path="/send" component={RedirectPathToSwapOnly} />
+              <Route exact strict path="/find" component={PoolFinder} />
+              <Route exact strict path="/pool" component={Pool} />
+              <Route exact strict path="/create" component={RedirectToAddLiquidity} />
+              <Route exact path="/add" component={AddLiquidity} />
+              <Route exact path="/add/:currencyIdA" component={RedirectOldAddLiquidityPathStructure} />
+              <Route exact path="/add/:currencyIdA/:currencyIdB" component={RedirectDuplicateTokenIds} />
+              <Route exact strict path="/remove/v1/:address" component={RemoveV1Exchange} />
+              <Route exact strict path="/remove/:tokens" component={RedirectOldRemoveLiquidityPathStructure} />
+              <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
+              <Route exact strict path="/migrate/v1" component={MigrateV1} />
+              <Route exact strict path="/migrate/v1/:address" component={MigrateV1Exchange} />
+              {props.location.pathname !== '/' && <Route component={RedirectPathToSwapOnly} />}
+            </Switch>
+          </Web3ReactManager>
+          {props.location.pathname !== '/' && <Marginer />}
+        </BodyWrapper>
+      </AppWrapper>
+    </>
+  )
+}
+export default withRouter(App)

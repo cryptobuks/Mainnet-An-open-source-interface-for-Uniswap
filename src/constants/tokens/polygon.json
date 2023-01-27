@@ -1,0 +1,197 @@
+{
+  "name": "Polygon Tokens List",
+  "version": {
+    "major": 2,
+    "minor": 8,
+    "patch": 0
+  },
+  "logoURI": "https://wallet-asset.matic.network/img/tokens/matic.svg",
+  "keywords": [
+    "polygon",
+    "default",
+    "tokens"
+  ],
+  "tags": {
+    "stablecoin": {
+      "name": "Stablecoin",
+      "description": "Tokens that are fixed to an external asset, e.g. the US dollar"
+    },
+    "swapable": {
+      "name": "Swapable",
+      "description": "Tokens are eligible for swaps"
+    },
+    "erc20": {
+      "name": "erc20",
+      "description": "Tokens are of ERC20 token type"
+    },
+    "pos": {
+      "name": "PoS",
+      "description": "PoS tokens"
+    },
+    "plasma": {
+      "name": "Plasma",
+      "description": "Plasma tokens"
+    },
+    "metaTx": {
+      "name": "MetaTx",
+      "description": "Tokens are eligible for meta transactions"
+    },
+    "customWithdrawEventSig": {
+      "name": "Custom Withdraw Event Signature",
+      "description": "The token has a custom withdraw event signature"
+    },
+    "noDeposit": {
+      "name": "Deposit Disabled",
+      "description": "Tokens are not eligible for deposits"
+    },
+    "noWithdraw": {
+      "name": "Withdraw Disabled",
+      "description": "Tokens are not eligible for withdraws"
+    }
+  },
+  "timestamp": "2022-08-26T10:29:08.884Z",
+  "tokens":[
+    {
+        "chainId": 137,
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "decimals": 6,
+        "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+        "logoURI": "https://wallet-asset.matic.network/img/tokens/usdt.svg",
+        "tags": [
+            "pos",
+            "stablecoin",
+            "erc20",
+            "swapable",
+            "metaTx"
+        ],
+        "extensions": {
+            "rootAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+        }
+    },{
+        "chainId": 137,
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6,
+        "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "logoURI": "https://wallet-asset.matic.network/img/tokens/usdc.svg",
+        "tags": [
+            "pos",
+            "erc20",
+            "swapable",
+            "metaTx",
+            "stablecoin"
+        ],
+        "extensions": {
+            "rootAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+        }
+    },{
+        "chainId": 137,
+        "name": "ChainLink Token",
+        "symbol": "LINK",
+        "decimals": 18,
+        "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
+        "logoURI": "https://wallet-asset.matic.network/img/tokens/link.svg",
+        "tags": [
+            "pos",
+            "erc20",
+            "swapable",
+            "metaTx"
+        ],
+        "extensions": {
+            "rootAddress": "0x514910771AF9Ca656af840dff83E8264EcF986CA"
+        }
+    },{
+        "chainId": 137,
+        "name": "Dai - PoS",
+        "symbol": "DAI",
+        "decimals": 18,
+        "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+        "logoURI": "https://wallet-asset.matic.network/img/tokens/dai.svg",
+        "tags": [
+            "pos",
+            "stablecoin",
+            "erc20",
+            "swapable",
+            "metaTx"
+        ],
+        "extensions": {
+            "rootAddress": "0x6b175474e89094c44da98b954eedeac495271d0f"
+        }
+    },{
+        "chainId": 137,
+        "name": "Pod Dai Stablecoin",
+        "symbol": "pDAI",
+        "decimals": 18,
+        "address": "0x18C4315847Cf73D5028c8A98EAd16e862450E618",
+        "tags": [
+            "pos",
+            "erc20",
+            "swapable"
+        ],
+        "extensions": {
+            "rootAddress": "0x2f994e2E4F3395649eeE8A89092e63Ca526dA829"
+        }
+    },{
+        "chainId": 137,
+        "name": "Dai - Plasma",
+        "symbol": "DAI",
+        "decimals": 18,
+        "address": "0x84000b263080bc37d1dd73a29d92794a6cf1564e",
+        "logoURI": "https://wallet-asset.matic.network/img/tokens/dai.svg",
+        "tags": [
+            "plasma",
+            "stablecoin",
+            "erc20",
+            "noDeposit"
+        ],
+        "extensions": {
+            "rootAddress": "0x6b175474e89094c44da98b954eedeac495271d0f"
+        }
+    },{
+        "chainId": 137,
+        "name": "Binance USD",
+        "symbol": "BUSD",
+        "decimals": 18,
+        "address": "0xdab529f40e671a1d4bf91361c21bf9f0c9712ab7",
+        "logoURI": "https://wallet-asset.matic.network/img/tokens/busd.svg",
+        "tags": [
+            "pos",
+            "erc20",
+            "swapable"
+        ],
+        "extensions": {
+            "rootAddress": "0x4fabb145d64652a948d72533023f6e7a623c7c53"
+        }
+    },{
+        "chainId": 137,
+        "name": "Fantom Token",
+        "symbol": "FTM",
+        "decimals": 18,
+        "address": "0xC9c1c1c20B3658F8787CC2FD702267791f224Ce1",
+        "tags": [
+            "pos",
+            "erc20",
+            "swapable"
+        ],
+        "extensions": {
+            "rootAddress": "0x4e15361fd6b4bb609fa63c81a2be19d873717870"
+        },
+        "logoURI": "https://wallet-asset.matic.network/img/tokens/ftm.svg"
+    },{
+        "chainId": 137,
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+        "decimals": 18,
+        "address": "0xae740d42e4ff0c5086b2b5b5d149eb2f9e1a754f",
+        "tags": [
+            "pos",
+            "erc20",
+            "swapable"
+        ],
+        "extensions": {
+            "rootAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+        }
+    }
+]
+}

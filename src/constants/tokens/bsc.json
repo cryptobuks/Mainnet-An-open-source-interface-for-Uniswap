@@ -1,0 +1,205 @@
+{
+	"name": "BEP20 Token List",
+	"timestamp": "2020-12-04T12:00:21.269Z",
+	"version": {
+		"major": 16,
+		"minor": 8,
+		"patch": 1
+	},
+	"tags": {},
+	"logoURI": "https://pandaswap.xyz/static/media/bao-logo.afd82c21.png",
+	"keywords": [
+		"baoswap",
+		"xdai"
+	],
+	"tokens": [
+        {
+            "address": "0x55d398326f99059fF775485246999027B3197955",
+            "symbol": "USDT",
+            "name": "Binance Pegged USDT",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://elk.finance/tokens/logos/bsc/0x55d398326f99059fF775485246999027B3197955/logo.png",
+            "coingeckoId": "tether",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "pancake",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },
+        {
+            "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+            "symbol": "BUSD",
+            "name": "Binance Pegged BUSD",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://elk.finance/tokens/logos/bsc/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png",
+            "coingeckoId": "binance-usd",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "pancake",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },
+        {
+            "address": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+            "symbol": "DAI",
+            "name": "Binance Pegged DAI",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://elk.finance/tokens/logos/bsc/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3/logo.png",
+            "coingeckoId": "dai",
+            "listedIn": [
+                "coingecko",
+                "1inch",
+                "sushiswap",
+                "openocean",
+                "pancake",
+                "rubic",
+                "lifinance",
+                "xyfinance",
+                "elkfinance"
+            ]
+        },{
+            "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+            "symbol": "USDC",
+            "name": "Binance Pegged USD Coin",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://elk.finance/tokens/logos/bsc/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d/logo.png",
+            "coingeckoId": "usd-coin",
+            "listedIn": [
+              "coingecko",
+              "1inch",
+              "sushiswap",
+              "openocean",
+              "pancake",
+              "rubic",
+              "lifinance",
+              "xyfinance",
+              "elkfinance"
+            ]
+          },{
+            "address": "0x1dDcaa4Ed761428ae348BEfC6718BCb12e63bFaa",
+            "symbol": "deUSDC",
+            "name": "deBridge USD Coin",
+            "decimals": 6,
+            "chainId": 56,
+            "logoURI": "https://tokens.1inch.io/0x1ddcaa4ed761428ae348befc6718bcb12e63bfaa_2.png",
+            "coingeckoId": null,
+            "listedIn": [
+              "1inch",
+              "openocean",
+              "lifinance"
+            ]
+          },{
+            "address": "0x4DB5a66E937A9F4473fA95b1cAF1d1E1D62E29EA",
+            "symbol": "WETH",
+            "name": "Wrapped Ether (Wormhole)",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://static.debank.com/image/bsc_token/logo_url/0x4db5a66e937a9f4473fa95b1caf1d1e1d62e29ea/61844453e63cf81301f845d7864236f6.png",
+            "coingeckoId": "ethereum-wormhole",
+            "listedIn": [
+              "coingecko",
+              "lifinance"
+            ]
+          },{
+            "address": "0x3d6545b08693daE087E957cb1180ee38B9e3c25E",
+            "symbol": "ETC",
+            "name": "Ethereum Classic",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://static.debank.com/image/bsc_token/logo_url/0x3d6545b08693dae087e957cb1180ee38b9e3c25e/cdf3269440b55479f40609301537500a.png",
+            "coingeckoId": null,
+            "listedIn": [
+              "1inch",
+              "lifinance"
+            ]
+          },{
+            "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+            "symbol": "WETH",
+            "name": "Binance Pegged ETH",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://elk.finance/tokens/logos/bsc/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png",
+            "coingeckoId": "weth",
+            "listedIn": [
+              "coingecko",
+              "1inch",
+              "sushiswap",
+              "openocean",
+              "pancake",
+              "rubic",
+              "lifinance",
+              "xyfinance",
+              "elkfinance"
+            ]
+          },{
+            "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+            "symbol": "WBNB",
+            "name": "WBNB Token",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://elk.finance/tokens/logos/bsc/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png",
+            "coingeckoId": "wbnb",
+            "listedIn": [
+              "coingecko",
+              "1inch",
+              "sushiswap",
+              "openocean",
+              "pancake",
+              "rubic",
+              "lifinance",
+              "xyfinance",
+              "elkfinance"
+            ]
+          },{
+            "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+            "symbol": "BTCB",
+            "name": "Binance Pegged Bitcoin",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://elk.finance/tokens/logos/bsc/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c/logo.png",
+            "coingeckoId": "binance-bitcoin",
+            "listedIn": [
+              "coingecko",
+              "1inch",
+              "sushiswap",
+              "openocean",
+              "pancake",
+              "rubic",
+              "lifinance",
+              "xyfinance",
+              "elkfinance"
+            ]
+          },{
+            "address": "0xCC42724C6683B7E57334c4E856f4c9965ED682bD",
+            "symbol": "MATIC",
+            "name": "MATIC",
+            "decimals": 18,
+            "chainId": 56,
+            "logoURI": "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png?1624446912",
+            "coingeckoId": "matic-network",
+            "listedIn": [
+              "coingecko",
+              "openocean",
+              "rubic",
+              "lifinance",
+              "xyfinance"
+            ]
+          }
+    ]
+	}

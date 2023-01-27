@@ -1,0 +1,32 @@
+{
+    "name":"Fuji",
+    "timestamp": "2020-12-04T12:00:21.269Z",
+    "tokens":[
+    {
+        "address": "0xd00ae08403B9bbb9124bB305C09058E32C39A48c",
+        "symbol": "WAVAX",
+        "name": "Wrapped AVAX",
+        "decimals": 18,
+        "chainId": 43113,
+        "logoURI": "https://elk.finance/tokens/logos/fuji/0xd00ae08403B9bbb9124bB305C09058E32C39A48c/logo.png",
+        "coingeckoId": null,
+        "listedIn": [
+            "sushiswap",
+            "elkfinance"
+        ]
+    },
+    {
+        "address": "0x9983F755Bbd60d1886CbfE103c98C272AA0F03d6",
+        "symbol": "ALOT",
+        "name": "Dexalot Token",
+        "decimals": 18,
+        "chainId": 43113,
+        "logoURI": "https://elk.finance/tokens/logos/fuji/0xd00ae08403B9bbb9124bB305C09058E32C39A48c/logo.png",
+        "coingeckoId": null,
+        "listedIn": [
+            "sushiswap",
+            "elkfinance"
+        ]
+    }
+]
+}

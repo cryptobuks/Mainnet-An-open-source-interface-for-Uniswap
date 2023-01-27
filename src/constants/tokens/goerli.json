@@ -1,0 +1,26 @@
+{
+    "name":"Goeril",
+    "timestamp": "2020-12-04T12:00:21.269Z",
+	"version": {
+		"major": 16,
+		"minor": 8,
+		"patch": 1
+	},
+	"tags": {},
+    "tokens":[
+
+    {
+        "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+        "symbol": "UNI",
+        "name": "Uniswap",
+        "decimals": 18,
+        "chainId": 5,
+        "logoURI": "ipfs://QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg",
+        "coingeckoId": null,
+        "listedIn": [
+            "uniswap",
+            "sushiswap"
+        ]
+    }
+]
+}
