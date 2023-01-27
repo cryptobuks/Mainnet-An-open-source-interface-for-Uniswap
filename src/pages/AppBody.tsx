@@ -22,6 +22,7 @@ import TopCurrencyTable from 'src/components/CurrencyTable';
 import Favorites from 'src/components/favorites'
 import ComparisonChart from 'src/components/retro-comparision-chart'
 import Tricker from 'src/components/tricker'
+import SwapPage from 'src/components/swap'
 export const MainWrapper = styled.div`
 width: 100%;
   .d-none{
@@ -329,9 +330,12 @@ export default function AppBody({ children }: { children: React.ReactNode }) {
         </div>
         <div className="swap_wrapper">
           <section className="swap_box_wrapper flex  w-full flex-col lg:flex-row ">
-            <BodyWrapper className='roundend-lg'>
+            {/* <BodyWrapper className='roundend-lg'>
               {children}
-            </BodyWrapper>
+            </BodyWrapper> */}
+            <div className="rounded-lg bg-white shadow-card dark:bg-light-dark flex-none lg:w-[450px]">
+              <SwapPage></SwapPage>
+            </div>
             <ComparisonChart  />
             <Favorites />
           </section>

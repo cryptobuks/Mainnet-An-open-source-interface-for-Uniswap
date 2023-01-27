@@ -1,3 +1,4 @@
+import React from 'react'
 import { Bitcoin } from 'src/components/Icon/bitcoin';
 import { Ethereum } from 'src/components/Icon/ethereum';
 import { Tether } from 'src/components/Icon/tether';

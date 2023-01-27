@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import type { CoinTypes } from 'src/types';
 import { useState, useRef } from 'react';
 //@ts-ignore
@@ -8,8 +8,35 @@ import { ChevronDown } from 'src/components/Icon/chevron-down';
 import { useClickAway } from 'src/hooks/use-click-away';
 import { useLockBodyScroll } from 'src/hooks/use-lock-body-scroll';
 // import { coinList } from '@/data/static/coin-list';
-
-// import {CoinSelectView} from 'src/components/ui/coin-select-view'
+import { ChainId, ETHER } from '@uniswap/sdk'
+import Logos from '../../utils/icons'
+import CoinSelectView from 'src/components/ui/coin-select-view'
+const options = [
+  { value: String([ChainId.MAINNET][0]), label: 'ETH', logo: 'Ether' },
+  { value: String([ChainId.BNB][0]), label: 'BNB', logo: 'BNB' },
+  { value: String([ChainId.AVALANCHE_CMAINNET][0]), label: 'AVALANCHE', logo: 'Avalanche' },
+  { value: String([ChainId.POLYGON][0]), label: 'POLYGON', logo: 'POLYGON' },
+  { value: String([ChainId.FANTOM][0]), label: 'FANTOM', logo: 'FANTOM' },
+  // { value: String([ChainId.HECO][0]), label: 'HECO', logo: 'heco' },
+  { value: String([ChainId.OPTIMISM][0]), label: 'OPTIMISM', logo: 'OPTIMISM' },
+  // { value: String([ChainId.HARMONY][0]), label: 'HARMONY', logo: 'Ether' },
+  { value: String([ChainId.CELO][0]), label: 'CELO', logo: 'CELO' },
+  { value: String([ChainId.ETHClassic][0]), label: 'ETHClassic', logo: 'ethc' },
+  { value: String([ChainId.ARBITRUM][0]), label: 'ARBITRUM', logo: 'arbit' },
+  // { value: String([ChainId.HARMONY_TESTNET][0]), label: 'HARMONY TESTNET', logo: 'Ether' },
+  { value: String([ChainId.ROPSTEN][0]), label: 'ROPSTEN', logo: 'Ether' },
+  { value: String([ChainId.FANTOM_TESTNET][0]), label: 'FANTOM TESTNET', logo: 'FANTOM' },
+  { value: String([ChainId.RINKEBY][0]), label: 'RINKEBY', logo: 'Ether' },
+  { value: String([ChainId.GOERIL][0]), label: 'GOERIL', logo: 'Ether' },
+  { value: String([ChainId.KOVAN][0]), label: 'KOVAN', logo: 'Ether' },
+  { value: String([ChainId.ARBITRUM_RINKEBY][0]), label: 'RINKEBY', logo: 'arbit' },
+  // { value: String([ChainId.HECO_TESTNET][0]), label: 'HECO TESTNET', logo: 'heco' },
+  { value: String([ChainId.AVALANCHE_FUJI_TESTNET][0]), label: 'FUJI', logo: 'Avalanche' },
+  { value: String([ChainId.BNBTESTNET][0]), label: 'BNB TESTNET', logo: 'BNB' },
+  { value: String([ChainId.OPTIMISM_GOERLI][0]), label: 'OPTIMISM GOERIL', logo: 'OPTIMISM' },
+  { value: String([ChainId.CELO_TESTNET][0]), label: 'CELO TESTNET', logo: 'CELO' },
+  { value: String([ChainId.MUMBAI][0]), label: 'MUMBAI', logo: 'POLYGON' }
+]
 
 interface CoinInputTypes extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
@@ -30,8 +57,17 @@ export default function CoinInput({
   ...rest
 }: CoinInputTypes) {
   let [value, setValue] = useState('');
-  // let [selectedCoin, setSelectedCoin] = useState(coinList[defaultCoinIndex]);
-  let [selectedCoin, setSelectedCoin] = useState({code: 1, icon: ""});
+  const coinList:CoinTypes[]= useMemo(() => {
+    return options.map(item => {return  {
+      icon: <img className="w-4 mr-2" src={Logos[`${item.logo?.toLowerCase()}.png`]}/>,
+      code: item.label,
+      name: item.value,
+      price: Math.ceil(Math.random()*10000)/100,
+   }})
+  }, [options])
+  console.log(coinList);
+  
+  let [selectedCoin, setSelectedCoin] = useState<CoinTypes>(coinList[defaultCoinIndex]);
   let [visibleCoinList, setVisibleCoinList] = useState(false);
   const modalContainerRef = useRef<HTMLDivElement>(null);
   useClickAway(modalContainerRef, () => {
@@ -45,10 +81,10 @@ export default function CoinInput({
     //   getCoinValue && getCoinValue(param);
     // }
   };
-  // function handleSelectedCoin(coin: CoinTypes) {
-  //   setSelectedCoin(coin);
-  //   setVisibleCoinList(false);
-  // }
+  function handleSelectedCoin(coin: CoinTypes) {
+    setSelectedCoin(coin);
+    setVisibleCoinList(false);
+  }
   return (
     <>
       <div
@@ -110,9 +146,9 @@ export default function CoinInput({
               ref={modalContainerRef}
               className="inline-block text-left align-middle"
             >
-              {/* <CoinSelectView
+              <CoinSelectView
                 onSelect={(selectedCoin) => handleSelectedCoin(selectedCoin)}
-              /> */}
+              />
             </motion.div>
           </motion.div>
         )}

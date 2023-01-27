@@ -51,6 +51,7 @@ const RESOLVER_ABI = [
 
 // cache the resolver contracts since most of them are the public resolver
 function resolverContract(resolverAddress: string, provider: Provider): Contract {
+  //@ts-ignore
   return new Contract(resolverAddress, RESOLVER_ABI, provider)
 }
 
@@ -60,6 +61,7 @@ function resolverContract(resolverAddress: string, provider: Provider): Contract
  * @param provider provider to use to fetch the data
  */
 export default async function resolveENSContentHash(ensName: string, provider: Provider): Promise<string> {
+  //@ts-ignore
   const ensRegistrarContract = new Contract(REGISTRAR_ADDRESS, REGISTRAR_ABI, provider)
   const hash = namehash(ensName)
   const resolverAddress = await ensRegistrarContract.resolver(hash)
