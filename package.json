@@ -124,6 +124,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/react-table": "7.7.9",
+    "@uniswap/sdk": "3.0.2",
     "framer-motion": "7.3.6",
     "jotai": "^1.13.1",
     "nice-react-ticker": "^2.1.0",
